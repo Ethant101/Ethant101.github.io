@@ -1,0 +1,61 @@
+.nav-item:first-child {
+    border: 1px solid red;
+}
+.nav-item:nth-child(2) {
+    border:1px solid purple;
+}
+.nav-item:nth-child(3) {
+    border:1px solid green;
+}
+.nav-item:last-child {
+    border:1px solid blue;
+}
+.pseudo::first-line {
+    color:red;
+}
+.pseudo::first-letter {
+    font-size:2em;
+}
+.pseudo::before {
+    content:'This text is in css';
+}
+.pseudo::after {
+    content: 'Here is after text';
+}
+.card:hover {
+    transform:scale(1.1);
+    z-index:2;
+}
+.page-item:nth-child(odd) {
+    border:2px solid blue;
+}
+.page-item:nth-child(even) {
+    border:2px solid #dadfea;
+}
+img {
+    max-height:300px;
+    object-fit:cover;
+}
+.card {
+    margin-right:10px;
+    transition: transform .2s;
+}
+footer {
+    height:60px;
+    background-color: #dadfe3;
+}
+@media print {
+    * {
+        color: red;
+    }
+}
+@media (min-width: 1000px){
+    .card-text {
+        color:blue;
+    }
+}
+@media (min-width: 700px) and (max-width: 900px){
+    .card-text {
+        color:green;
+    }
+}
